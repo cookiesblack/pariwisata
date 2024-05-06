@@ -33,8 +33,8 @@ class Pariwisata extends Controller
 
     public function berita()
     {
-        $kolom = "post_title, post_content, post_images, post_date";
-        $kolomCaption = "Judul Berita, Isi Berita, Gambar, Tanggal, user_id";
+        $kolom = "post_title, post_images, post_date";
+        $kolomCaption = "Judul Berita, Gambar, Tanggal, user_id";
         $berita = Berita::all();
         $data = [
             "title" => "Aplikasi Pariwisata Minahasa",
@@ -93,8 +93,8 @@ class Pariwisata extends Controller
 
     public function wisata()
     {
-        $kolom = "nama_lokasi, garis_lintang, garis_bujur, informasi, gambar";
-        $kolomCaption = "Lokasi Wisata, Garis Lintang, Garis Bujur, Informasi, Gambar";
+        $kolom = "nama_lokasi, garis_lintang, garis_bujur, gambar";
+        $kolomCaption = "Lokasi Wisata, Garis Lintang, Garis Bujur, Gambar";
         $Wisata = Wisata::all();
         $data = [
             "title" => "Aplikasi Pariwisata Minahasa",
